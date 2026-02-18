@@ -1,24 +1,25 @@
-// Simple active-nav highlight (no libraries)
+// Optional: highlight the active nav link while scrolling
 document.addEventListener("DOMContentLoaded", () => {
   const navLinks = Array.from(document.querySelectorAll("nav a[href^='#']"));
   const sections = navLinks
-    .map(a => document.querySelector(a.getAttribute("href")))
+    .map(link => document.querySelector(link.getAttribute("href")))
     .filter(Boolean);
 
-  function setActiveLink() {
-    const y = window.scrollY + 120; // offset for fixed header
-    let activeId = null;
+  function updateActive() {
+    const offset = 120; // fixed header buffer
+    const y = window.scrollY + offset;
 
+    let currentId = null;
     for (const section of sections) {
-      if (section.offsetTop <= y) activeId = section.id;
+      if (section.offsetTop <= y) currentId = section.id;
     }
 
-    navLinks.forEach(a => {
-      const target = a.getAttribute("href").slice(1);
-      a.classList.toggle("is-active", target === activeId);
+    navLinks.forEach(link => {
+      const id = link.getAttribute("href").slice(1);
+      link.classList.toggle("is-active", id === currentId);
     });
   }
 
-  window.addEventListener("scroll", setActiveLink, { passive: true });
-  setActiveLink();
+  window.addEventListener("scroll", updateActive, { passive: true });
+  updateActive();
 });
