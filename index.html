@@ -34,11 +34,10 @@
 
 <main>
 
-  <section id="hero" aria-label="Site introduction">
-    <div class="hero-content">
-      <p class="hero-tag">OPEN DATA · PUBLIC ACCOUNTABILITY</p>
-      <h1>Police Data<br><span class="outline-text">Across Virginia</span></h1>
-      <p class="hero-subtitle">
+ <section id="hero">
+  <div class="hero-content">
+    <h1>Police Data Across Virginia</h1>
+    <p class="hero-subtitle">
         This site brings together publicly available policing and crime data for five Virginia jurisdictions.
         It is built to make the numbers easier to find, easier to compare, and easier to verify.
       </p>
@@ -109,55 +108,6 @@
     </div>
   </section>
 
-  <section id="map">
-    <div class="section-header">
-      <span class="section-number">02</span>
-      <h2>Locations Covered</h2>
-    </div>
-
-    <div class="section-content">
-      <div class="map-grid">
-        <div class="section-text">
-          <p class="lead-text">Five jurisdictions with different local conditions.</p>
-          <p>
-            This simplified map uses the official flags for quick orientation.
-            It is not to scale, but it matches the five areas presented below.
-          </p>
-          <p>
-            Tip: You can click the flags to jump to the area cards.
-          </p>
-        </div>
-
-        <div class="flag-map" role="img" aria-label="Flag map showing Arlington, Alexandria, Fairfax, Richmond, and Norfolk">
-          <a class="flag-pin fp-arlington" href="#areas" aria-label="Jump to Arlington">
-            <img src="images/arlington-flag.png" alt="Arlington County flag">
-            <span>Arlington</span>
-          </a>
-
-          <a class="flag-pin fp-alexandria" href="#areas" aria-label="Jump to Alexandria">
-            <img src="images/alexandria-flag.png" alt="Alexandria flag">
-            <span>Alexandria</span>
-          </a>
-
-          <a class="flag-pin fp-fairfax" href="#areas" aria-label="Jump to Fairfax County">
-            <img src="images/fairfax-flag.png" alt="Fairfax County flag">
-            <span>Fairfax</span>
-          </a>
-
-          <a class="flag-pin fp-richmond" href="#areas" aria-label="Jump to Richmond">
-            <img src="images/richmond-flag.png" alt="Richmond flag">
-            <span>Richmond</span>
-          </a>
-
-          <a class="flag-pin fp-norfolk" href="#areas" aria-label="Jump to Norfolk">
-            <img src="images/norfolk-flag.gif" alt="Norfolk flag">
-            <span>Norfolk</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="areas">
     <div class="section-header">
       <span class="section-number">03</span>
@@ -174,212 +124,43 @@
       </div>
     </div>
 
-    <div class="area-grid">
-      <article class="area-card card-arlington">
-        <div class="card-top">
-          <span class="card-type">COUNTY</span>
-          <span class="card-pop">Pop. 238,643</span>
-        </div>
-        <h3>Arlington</h3>
-        <img src="images/arlington-flag.png" class="area-flag">
+   <section id="areas">
+  <h2>Five Jurisdictions</h2>
 
-        <div class="card-stats">
-          <div class="card-stat">
-            <span class="cs-value up">+11%</span>
-            <span class="cs-label">Group A Offenses (2024)</span>
-          </div>
-          <div class="card-stat">
-            <span class="cs-value up">+76%</span>
-            <span class="cs-label">Shoplifting increase</span>
-          </div>
-          <div class="card-stat">
-            <span class="cs-value flat">~0%</span>
-            <span class="cs-label">2025 trend (leveling)</span>
-          </div>
-        </div>
-        <p class="card-note">Reported offense totals rose after 2020, and early 2025 numbers suggest a slower pace of change.</p>
-        <div class="card-source">Source: Arlington County Police Department Annual Report (2024)</div>
-      </article>
+  <div class="area-grid">
 
-      <article class="area-card card-alexandria">
-        <div class="card-top">
-          <span class="card-type">INDEPENDENT CITY</span>
-          <span class="card-pop">Pop. 159,363</span>
-        </div>
-        <h3>Alexandria</h3>
-        <img src="images/alexandria-flag.png" alt="Flag of the City of Alexandria, Virginia" class="area-flag">
+    <article id="arlington" class="area-card">
+      <h3>Arlington County</h3>
+      <img src="images/arlington-flag.png" alt="Arlington flag" class="area-flag">
+      <p>Group A offenses increased in 2024 compared to 2023. Preliminary 2025 data suggests stabilization.</p>
+    </article>
 
-        <div class="card-stats">
-          <div class="card-stat">
-            <span class="cs-value down">-4.2%</span>
-            <span class="cs-label">Violent crime rate</span>
-          </div>
-          <div class="card-stat">
-            <span class="cs-value up">+8%</span>
-            <span class="cs-label">Property crime</span>
-          </div>
-          <div class="card-stat">
-            <span class="cs-value neutral">215</span>
-            <span class="cs-label">Officers sworn</span>
-          </div>
-        </div>
-        <p class="card-note">Tourism and nightlife influence property crime patterns compared with residential areas.</p>
-        <div class="card-source">Source: Alexandria PD and VSP DART</div>
-      </article>
+    <article id="alexandria" class="area-card">
+      <h3>City of Alexandria</h3>
+      <img src="images/alexandria-flag.png" alt="Alexandria flag" class="area-flag">
+      <p>Violent crime decreased slightly while property crime showed modest increases.</p>
+    </article>
 
-      <article class="area-card card-fairfax">
-        <div class="card-top">
-          <span class="card-type">COUNTY</span>
-          <span class="card-pop">Pop. 1,149,595</span>
-        </div>
-        <h3>Fairfax County</h3>
-        <img src="images/fairfax-flag.png" class="area-flag">
+    <article id="fairfax" class="area-card">
+      <h3>Fairfax County</h3>
+      <img src="images/fairfax-flag.png" alt="Fairfax flag" class="area-flag">
+      <p>One of the largest jurisdictions in Virginia, with consistently low violent crime rates.</p>
+    </article>
 
-        <div class="card-stats">
-          <div class="card-stat">
-            <span class="cs-value neutral">1.15M</span>
-            <span class="cs-label">Largest VA jurisdiction</span>
-          </div>
-          <div class="card-stat">
-            <span class="cs-value down">Low</span>
-            <span class="cs-label">Violent crime rate</span>
-          </div>
-          <div class="card-stat">
-            <span class="cs-value neutral">Weekly</span>
-            <span class="cs-label">Open data updates</span>
-          </div>
-        </div>
-        <p class="card-note">Frequent updates and an active open-data portal make Fairfax easier to track over time.</p>
-        <div class="card-source">Source: Fairfax County Police Open Data</div>
-      </article>
+    <article id="richmond" class="area-card">
+      <h3>City of Richmond</h3>
+      <img src="images/richmond-flag.png" alt="Richmond flag" class="area-flag">
+      <p>Homicides have declined since 2022, though overall violent crime remains above state average.</p>
+    </article>
 
-      <article class="area-card card-richmond">
-        <div class="card-top">
-          <span class="card-type">INDEPENDENT CITY</span>
-          <span class="card-pop">Pop. 226,604</span>
-        </div>
-        <h3>Richmond</h3>
-        <img src="images/richmond-flag.png" class="area-flag">
+    <article id="norfolk" class="area-card">
+      <h3>City of Norfolk</h3>
+      <img src="images/norfolk-flag.gif" alt="Norfolk flag" class="area-flag">
+      <p>Part of the Hampton Roads region, reporting higher violent crime rates relative to Northern Virginia.</p>
+    </article>
 
-        <div class="card-stats">
-          <div class="card-stat">
-            <span class="cs-value down">-19%</span>
-            <span class="cs-label">Homicides (2024 statewide)</span>
-          </div>
-          <div class="card-stat">
-            <span class="cs-value up">High</span>
-            <span class="cs-label">Violent crime rate</span>
-          </div>
-          <div class="card-stat">
-            <span class="cs-value neutral">Capitol</span>
-            <span class="cs-label">State capital city</span>
-          </div>
-        </div>
-        <p class="card-note">Richmond’s urban density and regional movement shape reported incidents and calls for service.</p>
-        <div class="card-source">Source: Crime in Virginia (2024) and RPD</div>
-      </article>
-
-      <article class="area-card card-norfolk">
-        <div class="card-top">
-          <span class="card-type">INDEPENDENT CITY</span>
-          <span class="card-pop">Pop. 245,406</span>
-        </div>
-        <h3>Norfolk</h3>
-        <img src="images/norfolk-flag.gif" class="area-flag">
-
-        <div class="card-stats">
-          <div class="card-stat">
-            <span class="cs-value up">High</span>
-            <span class="cs-label">Hampton Roads crime rate</span>
-          </div>
-          <div class="card-stat">
-            <span class="cs-value neutral">Naval</span>
-            <span class="cs-label">Major military presence</span>
-          </div>
-          <div class="card-stat">
-            <span class="cs-value down">-7%</span>
-            <span class="cs-label">VA violent crime (2024)</span>
-          </div>
-        </div>
-        <p class="card-note">Regional hubs and waterfront activity affect incident patterns in ways suburbs do not share.</p>
-        <div class="card-source">Source: VSP DART and Norfolk PD</div>
-      </article>
-    </div>
-  </section>
-
-  <section id="compare">
-    <div class="section-header">
-      <span class="section-number">04</span>
-      <h2>How Do They Compare?</h2>
-    </div>
-
-    <div class="section-content">
-      <div class="section-text">
-        <p class="lead-text">Comparisons work best when definitions match.</p>
-        <p>
-          The chart below shows violent crime rates per 100,000 residents for each area.
-          Rates help normalize for population size, but they still reflect reporting practices and local context.
-        </p>
-      </div>
-    </div>
-
-    <div class="compare-grid">
-      <div class="compare-category">
-        <h3>Violent Crime Rate <span class="rate-note">(per 100,000 residents, 2024)</span></h3>
-        <div class="bar-group">
-          <div class="bar-row">
-            <span class="bar-label">Arlington</span>
-            <div class="bar-track"><div class="bar-fill bar-low" style="width: 28%;"><span>142</span></div></div>
-          </div>
-          <div class="bar-row">
-            <span class="bar-label">Alexandria</span>
-            <div class="bar-track"><div class="bar-fill bar-low" style="width: 34%;"><span>171</span></div></div>
-          </div>
-          <div class="bar-row">
-            <span class="bar-label">Fairfax Co.</span>
-            <div class="bar-track"><div class="bar-fill bar-low" style="width: 20%;"><span>98</span></div></div>
-          </div>
-          <div class="bar-row">
-            <span class="bar-label">Richmond</span>
-            <div class="bar-track"><div class="bar-fill bar-high" style="width: 78%;"><span>396</span></div></div>
-          </div>
-          <div class="bar-row">
-            <span class="bar-label">Norfolk</span>
-            <div class="bar-track"><div class="bar-fill bar-high" style="width: 85%;"><span>431</span></div></div>
-          </div>
-        </div>
-        <p class="compare-insight">
-          Northern Virginia jurisdictions are lower on this measure than Richmond and Norfolk.
-          Statewide rates provide one additional benchmark for context.
-        </p>
-      </div>
-
-      <div class="compare-category">
-        <h3>Statewide Snapshot <span class="rate-note">(Virginia 2024)</span></h3>
-        <div class="snapshot-grid">
-          <div class="snap-card">
-            <span class="snap-number">16,853</span>
-            <span class="snap-label">Violent Offenses</span>
-            <span class="snap-change down">Down 7.0% from 2023</span>
-          </div>
-          <div class="snap-card">
-            <span class="snap-number">421</span>
-            <span class="snap-label">Homicides</span>
-            <span class="snap-change down">Down 19.0% from 2023</span>
-          </div>
-          <div class="snap-card">
-            <span class="snap-number">340</span>
-            <span class="snap-label">Hate Crime Incidents</span>
-            <span class="snap-change up">Up 25.5% from 2023</span>
-          </div>
-          <div class="snap-card">
-            <span class="snap-number">86.6%</span>
-            <span class="snap-label">Homicides by Firearm</span>
-            <span class="snap-change flat">Consistent</span>
-          </div>
-        </div>
-      </div>
-    </div>
+  </div>
+</section>
 
     <div class="engage-block">
       <div class="engage-icon" aria-hidden="true">?</div>
