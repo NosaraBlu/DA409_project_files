@@ -35,7 +35,6 @@
     --radius:    8px;
     --radius-lg: 16px;
 
-
     --shadow-sm:  0 1px 3px rgba(0, 0, 0, 0.12);
     --shadow-md:  0 4px 12px rgba(0, 0, 0, 0.1);
     --shadow-lg:  0 8px 30px rgba(0, 0, 0, 0.15);
@@ -44,6 +43,7 @@
 }
 
 
+/* ----- RESET & BASE ----- */
 *,
 *::before,
 *::after {
@@ -81,7 +81,9 @@ ul {
 }
 
 
-
+/* ============================================================
+   PAGE GRID — overall layout using CSS Grid
+   ============================================================ */
 .page-grid {
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -89,19 +91,14 @@ ul {
     min-height: 100vh;
 }
 
-.site-header {
-    grid-row: 1;
-}
-
-.site-main {
-    grid-row: 2;
-}
-
-.site-footer {
-    grid-row: 3;
-}
+.site-header { grid-row: 1; }
+.site-main   { grid-row: 2; }
+.site-footer { grid-row: 3; }
 
 
+/* ============================================================
+   HEADER
+   ============================================================ */
 .site-header {
     background-color: var(--clr-navy);
     color: var(--clr-white);
@@ -142,14 +139,8 @@ ul {
     line-height: 1.2;
 }
 
-.brand-accent {
-    color: var(--clr-gold);
-}
-
-.brand-tagline {
-    display: none;
-}
-
+.brand-accent { color: var(--clr-gold); }
+.brand-tagline { display: none; }
 
 .nav-list {
     display: flex;
@@ -174,6 +165,9 @@ ul {
 }
 
 
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
 .hero {
     background-color: var(--clr-slate);
     color: var(--clr-white);
@@ -220,6 +214,9 @@ ul {
 }
 
 
+/* ============================================================
+   CONTENT SECTIONS
+   ============================================================ */
 .content-section {
     max-width: var(--max-width);
     margin: 0 auto;
@@ -230,14 +227,9 @@ ul {
     flex-wrap: wrap;
 }
 
+.section-reverse { flex-direction: row-reverse; }
 
-.section-reverse {
-    flex-direction: row-reverse;
-}
-
-.section-text {
-    flex: 1 1 400px;
-}
+.section-text { flex: 1 1 400px; }
 
 .section-title {
     font-family: var(--ff-heading);
@@ -271,13 +263,14 @@ ul {
     box-shadow: var(--shadow-md);
 }
 
-
 .content-section + .content-section {
     border-top: 1px solid var(--clr-gray-200);
 }
 
 
-
+/* ============================================================
+   FLAG ROW — Featured Jurisdictions with Crime Data
+   ============================================================ */
 .flag-row {
     width: 100%;
     margin-top: var(--space-lg);
@@ -302,7 +295,7 @@ ul {
 }
 
 .flag-card {
-    flex: 0 1 140px;
+    flex: 0 1 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -329,12 +322,63 @@ ul {
 
 .flag-label {
     font-size: var(--fs-sm);
-    font-weight: 600;
+    font-weight: 700;
     color: var(--clr-navy);
     text-align: center;
+    margin-bottom: var(--space-xs);
 }
 
 
+/* ============================================================
+   CRIME DATA TABLE (inside flag cards)
+   ============================================================ */
+.crime-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--fs-xs);
+}
+
+.crime-table th {
+    background-color: var(--clr-navy);
+    color: var(--clr-white);
+    padding: 4px 6px;
+    text-align: left;
+    font-weight: 600;
+    font-size: var(--fs-xs);
+}
+
+.crime-table th:last-child {
+    text-align: right;
+}
+
+.crime-table td {
+    padding: 3px 6px;
+    border-bottom: 1px solid var(--clr-gray-200);
+    color: var(--clr-gray-800);
+}
+
+.crime-table td:last-child {
+    text-align: right;
+    font-weight: 600;
+    color: var(--clr-navy);
+}
+
+.crime-table tbody tr:nth-child(even) {
+    background-color: var(--clr-gray-100);
+}
+
+.crime-source {
+    font-size: 0.65rem;
+    color: var(--clr-gray-600);
+    text-align: center;
+    margin-top: var(--space-xs);
+    font-style: italic;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
 .site-footer {
     background-color: var(--clr-navy);
     color: var(--clr-gray-200);
@@ -397,6 +441,11 @@ ul {
 }
 
 
+/* ============================================================
+   RESPONSIVE DESIGN
+   ============================================================ */
+
+/* --- MOBILE (< 480px) --- */
 @media (max-width: 479px) {
     .site-header {
         padding: var(--space-sm);
@@ -438,12 +487,7 @@ ul {
     }
 
     .flag-card {
-        flex: 0 1 110px;
-    }
-
-    .flag-img {
-        max-width: 90px;
-        height: 60px;
+        flex: 0 1 100%;
     }
 
     .footer-inner {
@@ -456,15 +500,11 @@ ul {
     }
 }
 
-
+/* --- TABLET (480px – 767px) --- */
 @media (min-width: 480px) and (max-width: 767px) {
     .header-inner {
         flex-direction: column;
         align-items: flex-start;
-        gap: var(--space-xs);
-    }
-
-    .nav-list {
         gap: var(--space-xs);
     }
 
@@ -480,15 +520,12 @@ ul {
         flex-direction: column;
     }
 
-    .section-image-wrap {
-        flex-basis: 100%;
-    }
-
     .flag-card {
-        flex: 0 1 120px;
+        flex: 0 1 45%;
     }
 }
 
+/* --- LAPTOP (768px – 1023px) --- */
 @media (min-width: 768px) {
     .brand-tagline {
         display: block;
@@ -509,8 +546,13 @@ ul {
     .section-reverse {
         flex-direction: row-reverse;
     }
+
+    .flag-card {
+        flex: 0 1 200px;
+    }
 }
 
+/* --- DESKTOP (1024px – 1439px) --- */
 @media (min-width: 1024px) {
     .hero {
         padding: var(--space-2xl) var(--space-xl);
@@ -529,16 +571,11 @@ ul {
     }
 
     .flag-card {
-        flex: 0 1 150px;
-    }
-
-    .flag-img {
-        max-width: 130px;
-        height: 85px;
+        flex: 0 1 220px;
     }
 }
 
-
+/* --- X-LARGE (1440px +) --- */
 @media (min-width: 1440px) {
     :root {
         --max-width: 1400px;
