@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VA Watchdogs — Virginia Crime Data Transparency</title>
     <link rel="stylesheet" href="styles.css">
@@ -72,177 +72,120 @@
                 <!-- FLAG ROW: Featured Jurisdictions with Data Tables -->
                 <div class="flag-row">
                     <h3 class="flag-row-title">Featured Jurisdictions</h3>
+
+                    <!-- ROW 1: 4 cards -->
                     <div class="flag-grid">
 
                         <!-- ALEXANDRIA -->
                         <figure class="flag-card">
                             <img src="images/alexandria-flag.png" alt="City of Alexandria flag" class="flag-img">
                             <figcaption class="flag-label">Alexandria</figcaption>
-                            <table class="crime-table">
-                                <thead>
-                                    <tr>
-                                        <th>Category</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>Violent Crime</td><td>10,007</td></tr>
-                                    <tr><td>Property Crime</td><td>14,716</td></tr>
-                                    <tr><td>Homicides</td><td>2</td></tr>
-                                    <tr><td>Agg. Assault</td><td>1,022</td></tr>
-                                    <tr><td>Robbery</td><td>490</td></tr>
-                                    <tr><td>Burglary</td><td>733</td></tr>
-                                    <tr><td>Larceny/Theft</td><td>12,205</td></tr>
-                                </tbody>
-                            </table>
-                            <p class="crime-source">FBI UCR 2019-2024</p>
+                            <ul class="crime-list">
+                                <li><span class="crime-cat">Violent Crime</span> <span class="val-high">10,007</span></li>
+                                <li><span class="crime-cat">Property Crime</span> <span class="val-high">14,716</span></li>
+                                <li><span class="crime-cat">Homicides</span> <span class="val-low">2</span></li>
+                                <li><span class="crime-cat">Agg. Assault</span> <span class="val-mid">1,022</span></li>
+                                <li><span class="crime-cat">Robbery</span> <span class="val-mid">490</span></li>
+                                <li><span class="crime-cat">Burglary</span> <span class="val-low">733</span></li>
+                                <li><span class="crime-cat">Larceny/Theft</span> <span class="val-mid">12,205</span></li>
+                            </ul>
                         </figure>
 
                         <!-- ARLINGTON -->
                         <figure class="flag-card">
                             <img src="images/arlington-flag.png" alt="Arlington County flag" class="flag-img">
                             <figcaption class="flag-label">Arlington</figcaption>
-                            <table class="crime-table">
-                                <thead>
-                                    <tr>
-                                        <th>Category</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>Violent Crime</td><td>Up 9%</td></tr>
-                                    <tr><td>Property Crime</td><td>Up 12%</td></tr>
-                                    <tr><td>Agg. Assault</td><td>400</td></tr>
-                                    <tr><td>Simple Assault</td><td>1,583</td></tr>
-                                    <tr><td>Shoplifting</td><td>1,863</td></tr>
-                                    <tr><td>Drug Offenses</td><td>Up 1%</td></tr>
-                                    <tr><td>Group A Offenses</td><td>Up 11%</td></tr>
-                                </tbody>
-                            </table>
-                            <p class="crime-source">ACPD 2024 Annual Report</p>
+                            <ul class="crime-list">
+                                <li><span class="crime-cat">Violent Crime</span> <span class="val-high">Up 9%</span></li>
+                                <li><span class="crime-cat">Property Crime</span> <span class="val-high">Up 12%</span></li>
+                                <li><span class="crime-cat">Agg. Assault</span> <span class="val-high">400</span></li>
+                                <li><span class="crime-cat">Simple Assault</span> <span class="val-high">1,583</span></li>
+                                <li><span class="crime-cat">Shoplifting</span> <span class="val-high">1,863</span></li>
+                                <li><span class="crime-cat">Drug Offenses</span> <span class="val-high">Up 1%</span></li>
+                                <li><span class="crime-cat">Group A Offenses</span> <span class="val-high">Up 11%</span></li>
+                            </ul>
                         </figure>
 
                         <!-- FAIRFAX -->
                         <figure class="flag-card">
                             <img src="images/fairfax-flag.png" alt="Fairfax County flag" class="flag-img">
                             <figcaption class="flag-label">Fairfax County</figcaption>
-                            <table class="crime-table">
-                                <thead>
-                                    <tr>
-                                        <th>Category</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>Violent Crime</td><td>46,695</td></tr>
-                                    <tr><td>Property Crime</td><td>77,876</td></tr>
-                                    <tr><td>Homicides</td><td>106</td></tr>
-                                    <tr><td>Agg. Assault</td><td>2,890</td></tr>
-                                    <tr><td>Robbery</td><td>1,998</td></tr>
-                                    <tr><td>Burglary</td><td>3,270</td></tr>
-                                    <tr><td>Larceny/Theft</td><td>67,959</td></tr>
-                                </tbody>
-                            </table>
-                            <p class="crime-source">FBI UCR 2019-2024</p>
+                            <ul class="crime-list">
+                                <li><span class="crime-cat">Violent Crime</span> <span class="val-low">46,695</span></li>
+                                <li><span class="crime-cat">Property Crime</span> <span class="val-low">77,876</span></li>
+                                <li><span class="crime-cat">Homicides</span> <span class="val-low">106</span></li>
+                                <li><span class="crime-cat">Agg. Assault</span> <span class="val-low">2,890</span></li>
+                                <li><span class="crime-cat">Robbery</span> <span class="val-low">1,998</span></li>
+                                <li><span class="crime-cat">Burglary</span> <span class="val-low">3,270</span></li>
+                                <li><span class="crime-cat">Larceny/Theft</span> <span class="val-low">67,959</span></li>
+                            </ul>
                         </figure>
 
                         <!-- RICHMOND -->
                         <figure class="flag-card">
                             <img src="images/richmond-flag.png" alt="City of Richmond flag" class="flag-img">
                             <figcaption class="flag-label">Richmond</figcaption>
-                            <table class="crime-table">
-                                <thead>
-                                    <tr>
-                                        <th>Category</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>Violent Crime</td><td>17,602</td></tr>
-                                    <tr><td>Property Crime</td><td>38,050</td></tr>
-                                    <tr><td>Homicides</td><td>332</td></tr>
-                                    <tr><td>Agg. Assault</td><td>2,561</td></tr>
-                                    <tr><td>Robbery</td><td>1,373</td></tr>
-                                    <tr><td>Burglary</td><td>3,912</td></tr>
-                                    <tr><td>Larceny/Theft</td><td>29,917</td></tr>
-                                </tbody>
-                            </table>
-                            <p class="crime-source">FBI UCR 2019-2024</p>
+                            <ul class="crime-list">
+                                <li><span class="crime-cat">Violent Crime</span> <span class="val-high">17,602</span></li>
+                                <li><span class="crime-cat">Property Crime</span> <span class="val-high">38,050</span></li>
+                                <li><span class="crime-cat">Homicides</span> <span class="val-high">332</span></li>
+                                <li><span class="crime-cat">Agg. Assault</span> <span class="val-mid">2,561</span></li>
+                                <li><span class="crime-cat">Robbery</span> <span class="val-high">1,373</span></li>
+                                <li><span class="crime-cat">Burglary</span> <span class="val-high">3,912</span></li>
+                                <li><span class="crime-cat">Larceny/Theft</span> <span class="val-high">29,917</span></li>
+                            </ul>
                         </figure>
+                    </div>
+
+                    <!-- ROW 2: 3 cards -->
+                    <div class="flag-grid flag-grid-bottom">
 
                         <!-- NORFOLK -->
                         <figure class="flag-card">
                             <img src="images/norfolk-flag.png" alt="City of Norfolk flag" class="flag-img">
                             <figcaption class="flag-label">Norfolk</figcaption>
-                            <table class="crime-table">
-                                <thead>
-                                    <tr>
-                                        <th>Category</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>Violent Crime</td><td>1,082</td></tr>
-                                    <tr><td>Property Crime</td><td>8,694</td></tr>
-                                    <tr><td>Homicides</td><td>37</td></tr>
-                                    <tr><td>Agg. Assault</td><td>High</td></tr>
-                                    <tr><td>Robbery</td><td>High</td></tr>
-                                    <tr><td>Burglary</td><td>High</td></tr>
-                                    <tr><td>Vehicle Theft</td><td>High</td></tr>
-                                </tbody>
-                            </table>
-                            <p class="crime-source">FBI UCR 2024 / City-Data</p>
+                            <ul class="crime-list">
+                                <li><span class="crime-cat">Violent Crime</span> <span class="val-high">1,082</span></li>
+                                <li><span class="crime-cat">Property Crime</span> <span class="val-high">8,694</span></li>
+                                <li><span class="crime-cat">Homicides</span> <span class="val-high">37</span></li>
+                                <li><span class="crime-cat">Agg. Assault</span> <span class="val-high">High</span></li>
+                                <li><span class="crime-cat">Robbery</span> <span class="val-high">High</span></li>
+                                <li><span class="crime-cat">Burglary</span> <span class="val-high">High</span></li>
+                                <li><span class="crime-cat">Vehicle Theft</span> <span class="val-high">High</span></li>
+                            </ul>
                         </figure>
 
                         <!-- ROANOKE -->
                         <figure class="flag-card">
                             <img src="images/roanoke-flag.png" alt="City of Roanoke flag" class="flag-img">
                             <figcaption class="flag-label">Roanoke</figcaption>
-                            <table class="crime-table">
-                                <thead>
-                                    <tr>
-                                        <th>Category</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>Violent Crime</td><td>17,198</td></tr>
-                                    <tr><td>Property Crime</td><td>20,111</td></tr>
-                                    <tr><td>Rape</td><td>367</td></tr>
-                                    <tr><td>Agg. Assault</td><td>1,591</td></tr>
-                                    <tr><td>Robbery</td><td>443</td></tr>
-                                    <tr><td>Burglary</td><td>2,372</td></tr>
-                                    <tr><td>Larceny/Theft</td><td>15,904</td></tr>
-                                </tbody>
-                            </table>
-                            <p class="crime-source">FBI UCR 2019-2024</p>
+                            <ul class="crime-list">
+                                <li><span class="crime-cat">Violent Crime</span> <span class="val-high">17,198</span></li>
+                                <li><span class="crime-cat">Property Crime</span> <span class="val-high">20,111</span></li>
+                                <li><span class="crime-cat">Rape</span> <span class="val-high">367</span></li>
+                                <li><span class="crime-cat">Agg. Assault</span> <span class="val-high">1,591</span></li>
+                                <li><span class="crime-cat">Robbery</span> <span class="val-mid">443</span></li>
+                                <li><span class="crime-cat">Burglary</span> <span class="val-high">2,372</span></li>
+                                <li><span class="crime-cat">Larceny/Theft</span> <span class="val-high">15,904</span></li>
+                            </ul>
                         </figure>
 
                         <!-- FALLS CHURCH -->
                         <figure class="flag-card">
                             <img src="images/fallschurch-flag.png" alt="City of Falls Church flag" class="flag-img">
                             <figcaption class="flag-label">Falls Church</figcaption>
-                            <table class="crime-table">
-                                <thead>
-                                    <tr>
-                                        <th>Category</th>
-                                        <th>Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr><td>Violent Crime</td><td>15</td></tr>
-                                    <tr><td>Property Crime</td><td>225</td></tr>
-                                    <tr><td>Homicides</td><td>0</td></tr>
-                                    <tr><td>Assault</td><td>Low</td></tr>
-                                    <tr><td>Robbery</td><td>Low</td></tr>
-                                    <tr><td>Burglary</td><td>Low</td></tr>
-                                    <tr><td>Larceny/Theft</td><td>Majority</td></tr>
-                                </tbody>
-                            </table>
-                            <p class="crime-source">FBI UCR 2024 / AreaVibes</p>
+                            <ul class="crime-list">
+                                <li><span class="crime-cat">Violent Crime</span> <span class="val-low">15</span></li>
+                                <li><span class="crime-cat">Property Crime</span> <span class="val-low">225</span></li>
+                                <li><span class="crime-cat">Homicides</span> <span class="val-low">0</span></li>
+                                <li><span class="crime-cat">Assault</span> <span class="val-low">Low</span></li>
+                                <li><span class="crime-cat">Robbery</span> <span class="val-low">Low</span></li>
+                                <li><span class="crime-cat">Burglary</span> <span class="val-low">Low</span></li>
+                                <li><span class="crime-cat">Larceny/Theft</span> <span class="val-low">Majority</span></li>
+                            </ul>
                         </figure>
-
                     </div>
+
                 </div>
             </section>
 
