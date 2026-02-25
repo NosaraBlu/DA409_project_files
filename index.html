@@ -1,255 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VA WATCHDOG - Virginia Police Data Transparency</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VA Watchdogs — Virginia Crime Data Transparency</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+    <div class="page-grid">
+#Header
+        <header class="site-header">
+            <div class="header-inner">
+                <div class="brand">
+                    <span class="brand-icon" aria-hidden="true">&#9670;</span>
+                    <h1 class="brand-name">VA <span class="brand-accent">Watchdogs</span></h1>
+                    <p class="brand-tagline">Virginia Crime Data Transparency</p>
+                </div>
+                <nav class="main-nav" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li><a href="#overview" class="nav-link">Overview</a></li>
+                        <li><a href="#county-data" class="nav-link">County Data</a></li>
+                        <li><a href="#policing" class="nav-link">Policing</a></li>
+                        <li><a href="#resources" class="nav-link">Resources</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-<header>
-  <div class="identity">
-    <a href="index.html" aria-label="VA WATCHDOG home">
-      <span class="logo-icon" aria-hidden="true">&#9673;</span>
-      <span class="logo-text">VA<span class="accent">WATCHDOG</span></span>
-    </a>
-  </div>
+#Main
+        <main class="site-main">
 
-  <nav aria-label="Primary navigation">
-    <ul>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#map">Map</a></li>
-      <li><a href="#areas">Areas</a></li>
-      <li><a href="#compare">Compare</a></li>
-      <li><a href="#sources">Sources</a></li>
-    </ul>
-  </nav>
+#Hero
+            <section class="hero" id="overview">
+                <div class="hero-content">
+                    <h2 class="hero-title">Holding Power Accountable Through Data</h2>
+                    <p class="hero-text">
+                        VA Watchdogs compiles and presents recent crime data from counties
+                        and cities across Virginia. Our mission is to promote transparency
+                        in policing efforts and empower communities with the information
+                        they need to drive meaningful change.
+                    </p>
+                </div>
+                <div class="hero-image-wrap">
+                    <img src="images/va.png" alt="Map of Virginia showing all counties and independent cities" class="hero-image">
+                </div>
+            </section>
 
-  <div class="live-badge" aria-label="Public data indicator">
-    <span class="pulse" aria-hidden="true"></span> PUBLIC DATA
-  </div>
-</header>
+      #Data
+            <section class="content-section" id="county-data">
+                <div class="section-text">
+                    <h2 class="section-title">County &amp; City Crime Data</h2>
+                    <p class="section-body">
+                        Crime statistics vary dramatically across Virginia's counties and
+                        independent cities. VA Watchdogs currently tracks data from seven
+                        key jurisdictions: Alexandria, Arlington, Fairfax County, Richmond,
+                        Norfolk, Roanoke, and Falls Church. Each faces unique public safety
+                        challenges shaped by population density, economic factors, and
+                        policing strategies.
+                    </p>
+                    <p class="section-body">
+                        By making this data accessible and easy to compare, residents can
+                        identify trends, understand where resources are being allocated,
+                        and hold local officials accountable for outcomes in their communities.
+                    </p>
+                </div>
 
-<main>
+     #Flags
+                <div class="flag-row">
+                    <h3 class="flag-row-title">Featured Jurisdictions</h3>
+                    <div class="flag-grid">
+                        <figure class="flag-card">
+                            <img src="images/alexandria-flag.png" alt="City of Alexandria flag" class="flag-img">
+                            <figcaption class="flag-label">Alexandria</figcaption>
+                        </figure>
+                        <figure class="flag-card">
+                            <img src="images/arlington-flag.png" alt="Arlington County flag" class="flag-img">
+                            <figcaption class="flag-label">Arlington</figcaption>
+                        </figure>
+                        <figure class="flag-card">
+                            <img src="images/fairfax-flag.png" alt="Fairfax County flag" class="flag-img">
+                            <figcaption class="flag-label">Fairfax</figcaption>
+                        </figure>
+                        <figure class="flag-card">
+                            <img src="images/richmond-flag.png" alt="City of Richmond flag" class="flag-img">
+                            <figcaption class="flag-label">Richmond</figcaption>
+                        </figure>
+                        <figure class="flag-card">
+                            <img src="images/norfolk-flag.png" alt="City of Norfolk flag" class="flag-img">
+                            <figcaption class="flag-label">Norfolk</figcaption>
+                        </figure>
+                        <figure class="flag-card">
+                            <img src="images/roanoke-flag.png" alt="City of Roanoke flag" class="flag-img">
+                            <figcaption class="flag-label">Roanoke</figcaption>
+                        </figure>
+                        <figure class="flag-card">
+                            <img src="images/fallschurch-flag.png" alt="City of Falls Church flag" class="flag-img">
+                            <figcaption class="flag-label">Falls Church</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
 
- <section id="hero">
-  <div class="hero-content">
-    <h1>Police Data Across Virginia</h1>
-    <p class="hero-subtitle">
-        This site brings together publicly available policing and crime data for five Virginia jurisdictions.
-        It is built to make the numbers easier to find, easier to compare, and easier to verify.
-      </p>
+          #Police
+            <section class="content-section section-reverse" id="policing">
+                <div class="section-text">
+                    <h2 class="section-title">Policing Efforts &amp; Accountability</h2>
+                    <p class="section-body">
+                        Understanding how law enforcement agencies operate is essential
+                        to building trust between police departments and the communities
+                        they serve. VA Watchdogs tracks key policing metrics including
+                        response times, officer-to-resident ratios, use-of-force incidents,
+                        and complaint resolution rates across Virginia jurisdictions.
+                    </p>
+                    <p class="section-body">
+                        Transparency in policing is not about blame — it is about creating
+                        a shared foundation of facts that enables constructive dialogue
+                        and evidence-based policy decisions.
+                    </p>
+                </div>
+                <div class="section-image-wrap">
+                    <img src="images/police-lights.jpg" alt="Police car emergency lights at night" class="section-image">
+                </div>
+            </section>
 
-      <div class="hero-stats" aria-label="Site stats">
-        <div class="stat-pill">
-          <span class="stat-number">5</span>
-          <span class="stat-label">Areas Tracked</span>
-        </div>
-        <div class="stat-pill">
-          <span class="stat-number">2024</span>
-          <span class="stat-label">Latest Data</span>
-        </div>
-        <div class="stat-pill">
-          <span class="stat-number">100%</span>
-          <span class="stat-label">Public Sources</span>
-        </div>
-      </div>
+            <!-- SECTION: RESOURCES -->
+            <section class="content-section" id="resources">
+                <div class="section-text">
+                    <h2 class="section-title">Educational Resources</h2>
+                    <p class="section-body">
+                        Data without context can mislead. That is why VA Watchdogs provides
+                        educational guides that explain how crime data is collected, what
+                        the numbers mean, and how citizens can use this information
+                        responsibly. Our resources cover topics such as the Uniform Crime
+                        Reporting (UCR) program, the National Incident-Based Reporting
+                        System (NIBRS), and how to read a department's annual report.
+                    </p>
+                    <p class="section-body">
+                        Whether you are a student, journalist, community organizer, or
+                        concerned resident, these resources will help you navigate the
+                        data with confidence.
+                    </p>
+                </div>
+                <div class="section-image-wrap">
+                    <img src="images/resources.svg" alt="Open book with data charts representing educational resources" class="section-image">
+                </div>
+            </section>
 
-      <a href="#areas" class="cta-btn">Explore the Data</a>
+#About
+            <section class="content-section section-reverse" id="about">
+                <div class="section-text">
+                    <h2 class="section-title">About VA Watchdogs</h2>
+                    <p class="section-body">
+                        VA Watchdogs was founded with a simple belief: communities that
+                        have access to clear, accurate public safety data are better
+                        equipped to advocate for themselves. We are a non-partisan,
+                        volunteer-driven project dedicated to compiling Virginia crime
+                        data into an accessible, user-friendly format.
+                    </p>
+                    <p class="section-body">
+                        Our data is sourced from the Virginia State Police, the FBI's
+                        Crime Data Explorer, and individual department reports. We do not
+                        editorialize — we present the facts and let the community decide
+                        what action to take.
+                    </p>
+                </div>
+                <div class="section-image-wrap">
+                    <img src="images/about-team.svg" alt="Group of people representing the VA Watchdogs community team" class="section-image">
+                </div>
+            </section>
+
+        </main>
+
+   #Footer
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="brand-icon" aria-hidden="true">&#9670;</span>
+                    <span class="footer-name">VA Watchdogs</span>
+                </div>
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <ul class="footer-nav-list">
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#county-data">County Data</a></li>
+                        <li><a href="#policing">Policing</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </nav>
+                <p class="footer-copy">&copy; 2026 VA Watchdogs. All data sourced from public records.</p>
+            </div>
+        </footer>
+
     </div>
-
-    <div class="hero-visual" aria-hidden="true">
-      <div class="grid-map">
-        <div class="map-dot dot-arlington" title="Arlington"><span class="dot-label">Arlington</span></div>
-        <div class="map-dot dot-alexandria" title="Alexandria"><span class="dot-label">Alexandria</span></div>
-        <div class="map-dot dot-fairfax" title="Fairfax County"><span class="dot-label">Fairfax</span></div>
-        <div class="map-dot dot-richmond" title="Richmond"><span class="dot-label">Richmond</span></div>
-        <div class="map-dot dot-norfolk" title="Norfolk"><span class="dot-label">Norfolk</span></div>
-
-        <div class="grid-line gl-h1"></div>
-        <div class="grid-line gl-h2"></div>
-        <div class="grid-line gl-h3"></div>
-        <div class="grid-line gl-v1"></div>
-        <div class="grid-line gl-v2"></div>
-        <div class="grid-line gl-v3"></div>
-      </div>
-    </div>
-  </section>
-
-  <section id="overview">
-    <div class="section-header">
-      <span class="section-number">01</span>
-      <h2>Why Police Data Matters</h2>
-    </div>
-
-    <div class="section-content">
-      <img src="images/police-lights.jpg" class="section-image float-left">
-
-      <div class="section-text">
-        <p class="lead-text">Police data is public because it shapes daily life in a community.</p>
-
-        <p>
-          Virginia agencies collect and publish crime and enforcement data through state and federal reporting systems.
-          This site organizes public sources in one place so readers can compare patterns across five jurisdictions.
-        </p>
-
-        <p>
-          Each section summarizes reported trends and links back to original sources for verification.
-          The goal is clarity and context, not commentary.
-        </p>
-
-        <p>
-          Data sources include the Virginia State Police, local department reports, the FBI’s National Incident-Based Reporting System (NIBRS),
-          and the Virginia Open Data Portal.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section id="areas">
-    <div class="section-header">
-      <span class="section-number">03</span>
-      <h2>Five Areas Under the Lens</h2>
-    </div>
-
-    <div class="section-content">
-      <div class="section-text">
-        <p class="lead-text">Not the same Virginia.</p>
-        <p>
-          Northern Virginia jurisdictions tend to report lower violent crime rates than larger independent cities.
-          Differences in density, mobility, and local economies shape what is reported and how it trends over time.
-        </p>
-      </div>
-    </div>
-
-   <section id="areas">
-  <h2>Five Jurisdictions</h2>
-
-  <div class="area-grid">
-
-    <article id="arlington" class="area-card">
-      <h3>Arlington County</h3>
-      <img src="images/arlington-flag.png" alt="Arlington flag" class="area-flag">
-      <p>Group A offenses increased in 2024 compared to 2023. Preliminary 2025 data suggests stabilization.</p>
-    </article>
-
-    <article id="alexandria" class="area-card">
-      <h3>City of Alexandria</h3>
-      <img src="images/alexandria-flag.png" alt="Alexandria flag" class="area-flag">
-      <p>Violent crime decreased slightly while property crime showed modest increases.</p>
-    </article>
-
-    <article id="fairfax" class="area-card">
-      <h3>Fairfax County</h3>
-      <img src="images/fairfax-flag.png" alt="Fairfax flag" class="area-flag">
-      <p>One of the largest jurisdictions in Virginia, with consistently low violent crime rates.</p>
-    </article>
-
-    <article id="richmond" class="area-card">
-      <h3>City of Richmond</h3>
-      <img src="images/richmond-flag.png" alt="Richmond flag" class="area-flag">
-      <p>Homicides have declined since 2022, though overall violent crime remains above state average.</p>
-    </article>
-
-    <article id="norfolk" class="area-card">
-      <h3>City of Norfolk</h3>
-      <img src="images/norfolk-flag.gif" alt="Norfolk flag" class="area-flag">
-      <p>Part of the Hampton Roads region, reporting higher violent crime rates relative to Northern Virginia.</p>
-    </article>
-
-  </div>
-</section>
-
-    <div class="engage-block">
-      <div class="engage-icon" aria-hidden="true">?</div>
-      <h3>What questions do <em>you</em> have about policing in your area?</h3>
-      <p>
-        Public data is most useful when it is easy to locate and check.
-        The links below point to the original reporting sources used for this project.
-      </p>
-    </div>
-  </section>
-
-  <section id="sources">
-    <div class="section-header">
-      <span class="section-number">05</span>
-      <h2>Data Sources and Methodology</h2>
-    </div>
-
-    <div class="section-content">
-      <div class="section-text">
-        <p class="lead-text">All data is traceable to public sources.</p>
-        <p>
-          Crime statistics follow the FBI’s NIBRS structure as collected through Virginia reporting pipelines.
-          Population figures are provisional estimates from the Weldon Cooper Center at the University of Virginia.
-        </p>
-      </div>
-    </div>
-
-    <div class="source-links">
-      <a href="https://vsp.virginia.gov/sections-units-bureaus/bass/criminal-justice-information-services/uniform-crime-reporting/"
-         class="source-card" target="_blank" rel="noopener">
-        <span class="sc-tag">Primary</span>
-        <span class="sc-name">Virginia State Police - DART</span>
-        <span class="sc-desc">Crime in Virginia reports and dashboards</span>
-      </a>
-
-      <a href="https://www.fairfaxcounty.gov/police/chief/CrimeStatistics"
-         class="source-card" target="_blank" rel="noopener">
-        <span class="sc-tag">Local</span>
-        <span class="sc-name">Fairfax County Police - Crime Statistics</span>
-        <span class="sc-desc">Weekly updates and annual reporting</span>
-      </a>
-
-      <a href="https://www.arlingtonva.us/Government/Departments/Police-Department/Crime-Data-Hub"
-         class="source-card" target="_blank" rel="noopener">
-        <span class="sc-tag">Local</span>
-        <span class="sc-name">Arlington County - Crime Data Hub</span>
-        <span class="sc-desc">Interactive data and annual reports</span>
-      </a>
-
-      <a href="https://www.dcjs.virginia.gov/"
-         class="source-card" target="_blank" rel="noopener">
-        <span class="sc-tag">State</span>
-        <span class="sc-name">VA Dept. of Criminal Justice Services</span>
-        <span class="sc-desc">Research reports and trend analysis</span>
-      </a>
-
-      <a href="https://data.virginia.gov/"
-         class="source-card" target="_blank" rel="noopener">
-        <span class="sc-tag">Portal</span>
-        <span class="sc-name">Virginia Open Data Portal</span>
-        <span class="sc-desc">Community Policing Act data and more</span>
-      </a>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="footer-content">
-    <div class="footer-brand">
-      <span class="logo-icon" aria-hidden="true">&#9673;</span> VA<span class="accent">WATCHDOG</span>
-      <p class="footer-tagline">Open data. Public accountability.</p>
-    </div>
-
-    <div class="footer-info">
-      <p>Created for Web Design and Programming</p>
-      <p>The Catholic University of America</p>
-      <p>Professor Vladimir Kirnosov, Spring 2026</p>
-    </div>
-
-    <div class="footer-disclaimer">
-      <p>
-        2026 VA Watchdog. All crime data is sourced from publicly available Virginia government databases.
-        This site is an educational project and is not affiliated with any law enforcement agency.
-      </p>
-    </div>
-  </div>
-</footer>
-
-<script src="scripts.js"></script>
 </body>
 </html>
