@@ -11,6 +11,9 @@
     --clr-gray-600:    #6b7280;
     --clr-gray-800:    #2d2d2d;
     --clr-accent-red:  #c0392b;
+    --clr-green:       #1a7a3a;
+    --clr-red:         #b92020;
+    --clr-amber:       #b8860b;
 
     --ff-heading:  "Georgia", "Times New Roman", serif;
     --ff-body:     "Cambria", "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -294,6 +297,10 @@ ul {
     gap: var(--space-md);
 }
 
+.flag-grid-bottom {
+    margin-top: var(--space-md);
+}
+
 .flag-card {
     flex: 0 1 220px;
     display: flex;
@@ -321,6 +328,7 @@ ul {
 }
 
 .flag-label {
+    font-family: var(--ff-heading);
     font-size: var(--fs-sm);
     font-weight: 700;
     color: var(--clr-navy);
@@ -330,49 +338,46 @@ ul {
 
 
 /* ============================================================
-   CRIME DATA TABLE (inside flag cards)
+   CRIME DATA LIST (bullet points, color-coded values)
    ============================================================ */
-.crime-table {
+.crime-list {
     width: 100%;
-    border-collapse: collapse;
+    list-style: disc;
+    padding-left: 1.2em;
+}
+
+.crime-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 3px 0;
+    border-bottom: 1px solid var(--clr-gray-100);
     font-size: var(--fs-xs);
+    list-style: disc;
+    display: list-item;
 }
 
-.crime-table th {
-    background-color: var(--clr-navy);
-    color: var(--clr-white);
-    padding: 4px 6px;
-    text-align: left;
-    font-weight: 600;
-    font-size: var(--fs-xs);
-}
-
-.crime-table th:last-child {
-    text-align: right;
-}
-
-.crime-table td {
-    padding: 3px 6px;
-    border-bottom: 1px solid var(--clr-gray-200);
+.crime-cat {
     color: var(--clr-gray-800);
+    font-weight: 500;
 }
 
-.crime-table td:last-child {
-    text-align: right;
-    font-weight: 600;
-    color: var(--clr-navy);
+.val-low {
+    color: var(--clr-green);
+    font-weight: 700;
+    float: right;
 }
 
-.crime-table tbody tr:nth-child(even) {
-    background-color: var(--clr-gray-100);
+.val-high {
+    color: var(--clr-red);
+    font-weight: 700;
+    float: right;
 }
 
-.crime-source {
-    font-size: 0.65rem;
-    color: var(--clr-gray-600);
-    text-align: center;
-    margin-top: var(--space-xs);
-    font-style: italic;
+.val-mid {
+    color: var(--clr-amber);
+    font-weight: 700;
+    float: right;
 }
 
 
