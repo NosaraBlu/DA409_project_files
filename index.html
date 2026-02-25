@@ -9,6 +9,7 @@
 <body>
     <div class="page-grid">
 
+        <!-- HEADER -->
         <header class="site-header">
             <div class="header-inner">
                 <div class="brand">
@@ -28,9 +29,10 @@
             </div>
         </header>
 
+        <!-- MAIN CONTENT -->
         <main class="site-main">
 
-
+            <!-- HERO / OVERVIEW SECTION -->
             <section class="hero" id="overview">
                 <div class="hero-content">
                     <h2 class="hero-title">Holding Power Accountable Through Data</h2>
@@ -42,11 +44,11 @@
                     </p>
                 </div>
                 <div class="hero-image-wrap">
-                    <img src="images/va.png" alt="Map of Virginia showing all counties and independent cities" class="hero-image">
+                    <img src="images/virginia.png" alt="Map of Virginia showing all counties and independent cities" class="hero-image">
                 </div>
             </section>
 
-
+            <!-- SECTION: COUNTY & CITY DATA -->
             <section class="content-section" id="county-data">
                 <div class="section-text">
                     <h2 class="section-title">County &amp; City Crime Data</h2>
@@ -59,49 +61,192 @@
                         policing strategies.
                     </p>
                     <p class="section-body">
-                        By making this data accessible and easy to compare, residents can
-                        identify trends, understand where resources are being allocated,
-                        and hold local officials accountable for outcomes in their communities.
+                        The data below is sourced from the FBI Crime Data Explorer and
+                        reflects the 2024 reporting year (the most recent available).
+                        All rates are per 100,000 residents. By making this data accessible
+                        and easy to compare, residents can identify trends, understand where
+                        resources are being allocated, and hold local officials accountable.
                     </p>
                 </div>
 
-
+                <!-- FLAG ROW: Featured Jurisdictions with Data Tables -->
                 <div class="flag-row">
                     <h3 class="flag-row-title">Featured Jurisdictions</h3>
                     <div class="flag-grid">
+
+                        <!-- ALEXANDRIA -->
                         <figure class="flag-card">
                             <img src="images/alexandria-flag.png" alt="City of Alexandria flag" class="flag-img">
                             <figcaption class="flag-label">Alexandria</figcaption>
+                            <table class="crime-table">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Violent Crime</td><td>10,007</td></tr>
+                                    <tr><td>Property Crime</td><td>14,716</td></tr>
+                                    <tr><td>Homicides</td><td>2</td></tr>
+                                    <tr><td>Agg. Assault</td><td>1,022</td></tr>
+                                    <tr><td>Robbery</td><td>490</td></tr>
+                                    <tr><td>Burglary</td><td>733</td></tr>
+                                    <tr><td>Larceny/Theft</td><td>12,205</td></tr>
+                                </tbody>
+                            </table>
+                            <p class="crime-source">FBI UCR 2019-2024</p>
                         </figure>
+
+                        <!-- ARLINGTON -->
                         <figure class="flag-card">
                             <img src="images/arlington-flag.png" alt="Arlington County flag" class="flag-img">
                             <figcaption class="flag-label">Arlington</figcaption>
+                            <table class="crime-table">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Violent Crime</td><td>Up 9%</td></tr>
+                                    <tr><td>Property Crime</td><td>Up 12%</td></tr>
+                                    <tr><td>Agg. Assault</td><td>400</td></tr>
+                                    <tr><td>Simple Assault</td><td>1,583</td></tr>
+                                    <tr><td>Shoplifting</td><td>1,863</td></tr>
+                                    <tr><td>Drug Offenses</td><td>Up 1%</td></tr>
+                                    <tr><td>Group A Offenses</td><td>Up 11%</td></tr>
+                                </tbody>
+                            </table>
+                            <p class="crime-source">ACPD 2024 Annual Report</p>
                         </figure>
+
+                        <!-- FAIRFAX -->
                         <figure class="flag-card">
                             <img src="images/fairfax-flag.png" alt="Fairfax County flag" class="flag-img">
-                            <figcaption class="flag-label">Fairfax</figcaption>
+                            <figcaption class="flag-label">Fairfax County</figcaption>
+                            <table class="crime-table">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Violent Crime</td><td>46,695</td></tr>
+                                    <tr><td>Property Crime</td><td>77,876</td></tr>
+                                    <tr><td>Homicides</td><td>106</td></tr>
+                                    <tr><td>Agg. Assault</td><td>2,890</td></tr>
+                                    <tr><td>Robbery</td><td>1,998</td></tr>
+                                    <tr><td>Burglary</td><td>3,270</td></tr>
+                                    <tr><td>Larceny/Theft</td><td>67,959</td></tr>
+                                </tbody>
+                            </table>
+                            <p class="crime-source">FBI UCR 2019-2024</p>
                         </figure>
+
+                        <!-- RICHMOND -->
                         <figure class="flag-card">
                             <img src="images/richmond-flag.png" alt="City of Richmond flag" class="flag-img">
                             <figcaption class="flag-label">Richmond</figcaption>
+                            <table class="crime-table">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Violent Crime</td><td>17,602</td></tr>
+                                    <tr><td>Property Crime</td><td>38,050</td></tr>
+                                    <tr><td>Homicides</td><td>332</td></tr>
+                                    <tr><td>Agg. Assault</td><td>2,561</td></tr>
+                                    <tr><td>Robbery</td><td>1,373</td></tr>
+                                    <tr><td>Burglary</td><td>3,912</td></tr>
+                                    <tr><td>Larceny/Theft</td><td>29,917</td></tr>
+                                </tbody>
+                            </table>
+                            <p class="crime-source">FBI UCR 2019-2024</p>
                         </figure>
+
+                        <!-- NORFOLK -->
                         <figure class="flag-card">
                             <img src="images/norfolk-flag.png" alt="City of Norfolk flag" class="flag-img">
                             <figcaption class="flag-label">Norfolk</figcaption>
+                            <table class="crime-table">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Violent Crime</td><td>1,082</td></tr>
+                                    <tr><td>Property Crime</td><td>8,694</td></tr>
+                                    <tr><td>Homicides</td><td>37</td></tr>
+                                    <tr><td>Agg. Assault</td><td>High</td></tr>
+                                    <tr><td>Robbery</td><td>High</td></tr>
+                                    <tr><td>Burglary</td><td>High</td></tr>
+                                    <tr><td>Vehicle Theft</td><td>High</td></tr>
+                                </tbody>
+                            </table>
+                            <p class="crime-source">FBI UCR 2024 / City-Data</p>
                         </figure>
+
+                        <!-- ROANOKE -->
                         <figure class="flag-card">
                             <img src="images/roanoke-flag.png" alt="City of Roanoke flag" class="flag-img">
                             <figcaption class="flag-label">Roanoke</figcaption>
+                            <table class="crime-table">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Violent Crime</td><td>17,198</td></tr>
+                                    <tr><td>Property Crime</td><td>20,111</td></tr>
+                                    <tr><td>Rape</td><td>367</td></tr>
+                                    <tr><td>Agg. Assault</td><td>1,591</td></tr>
+                                    <tr><td>Robbery</td><td>443</td></tr>
+                                    <tr><td>Burglary</td><td>2,372</td></tr>
+                                    <tr><td>Larceny/Theft</td><td>15,904</td></tr>
+                                </tbody>
+                            </table>
+                            <p class="crime-source">FBI UCR 2019-2024</p>
                         </figure>
+
+                        <!-- FALLS CHURCH -->
                         <figure class="flag-card">
                             <img src="images/fallschurch-flag.png" alt="City of Falls Church flag" class="flag-img">
                             <figcaption class="flag-label">Falls Church</figcaption>
+                            <table class="crime-table">
+                                <thead>
+                                    <tr>
+                                        <th>Category</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr><td>Violent Crime</td><td>15</td></tr>
+                                    <tr><td>Property Crime</td><td>225</td></tr>
+                                    <tr><td>Homicides</td><td>0</td></tr>
+                                    <tr><td>Assault</td><td>Low</td></tr>
+                                    <tr><td>Robbery</td><td>Low</td></tr>
+                                    <tr><td>Burglary</td><td>Low</td></tr>
+                                    <tr><td>Larceny/Theft</td><td>Majority</td></tr>
+                                </tbody>
+                            </table>
+                            <p class="crime-source">FBI UCR 2024 / AreaVibes</p>
                         </figure>
+
                     </div>
                 </div>
             </section>
 
-     
+            <!-- SECTION: POLICING EFFORTS -->
             <section class="content-section section-reverse" id="policing">
                 <div class="section-text">
                     <h2 class="section-title">Policing Efforts &amp; Accountability</h2>
@@ -113,9 +258,10 @@
                         and complaint resolution rates across Virginia jurisdictions.
                     </p>
                     <p class="section-body">
-                        Transparency in policing is not about blame — it is about creating
-                        a shared foundation of facts that enables constructive dialogue
-                        and evidence-based policy decisions.
+                        Transparency in policing helps build a shared foundation of facts
+                        that enables constructive dialogue and evidence-based policy
+                        decisions. When residents and officials can look at the same
+                        data together, the conversation moves forward.
                     </p>
                 </div>
                 <div class="section-image-wrap">
@@ -123,12 +269,12 @@
                 </div>
             </section>
 
-         
+            <!-- SECTION: RESOURCES -->
             <section class="content-section" id="resources">
                 <div class="section-text">
                     <h2 class="section-title">Educational Resources</h2>
                     <p class="section-body">
-                        Data without context can mislead. That is why VA Watchdogs provides
+                        Data without context can mislead. VA Watchdogs provides
                         educational guides that explain how crime data is collected, what
                         the numbers mean, and how citizens can use this information
                         responsibly. Our resources cover topics such as the Uniform Crime
@@ -141,17 +287,14 @@
                         data with confidence.
                     </p>
                 </div>
-                <div class="section-image-wrap">
-                    <img src="images/resources.svg" alt="Open book with data charts representing educational resources" class="section-image">
-                </div>
             </section>
 
-
+            <!-- SECTION: ABOUT -->
             <section class="content-section section-reverse" id="about">
                 <div class="section-text">
                     <h2 class="section-title">About VA Watchdogs</h2>
                     <p class="section-body">
-                        VA Watchdogs was founded with a simple belief: communities that
+                        VA Watchdogs was founded on a simple belief: communities that
                         have access to clear, accurate public safety data are better
                         equipped to advocate for themselves. We are a non-partisan,
                         volunteer-driven project dedicated to compiling Virginia crime
@@ -159,18 +302,15 @@
                     </p>
                     <p class="section-body">
                         Our data is sourced from the Virginia State Police, the FBI's
-                        Crime Data Explorer, and individual department reports. We do not
-                        editorialize — we present the facts and let the community decide
-                        what action to take.
+                        Crime Data Explorer, and individual department reports. We present
+                        the facts and let the community decide what action to take.
                     </p>
-                </div>
-                <div class="section-image-wrap">
-                    <img src="images/about-team.svg" alt="Group of people representing the VA Watchdogs community team" class="section-image">
                 </div>
             </section>
 
         </main>
 
+        <!-- FOOTER -->
         <footer class="site-footer">
             <div class="footer-inner">
                 <div class="footer-brand">
